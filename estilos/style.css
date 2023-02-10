@@ -3,12 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
 * {
+    scroll-behavior: smooth;
+    
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     /* font-family: 'Lora', serif;  */
     box-sizing: border-box;
 
+}
+
+:target {
+    scroll-margin-top: 10em;
 }
 
 body {
@@ -36,15 +42,16 @@ header > #logo {
 header > div {
     width: 25%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
+    
 }
 
 header > div > a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    width: 50%;
+    width: auto;
     text-align: center;
     position: relative;
     display: inline-block;
@@ -164,20 +171,9 @@ form > input:hover {
 #meio {
     width: 100%;
     display: flex;
-    padding: 30px 0px 30px 0px;
-    background-color: white;
-    position: relative;
-}
-
-.tarja {
+    padding: 50px 0px 50px 0px;
     background-color: #DAA41E;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    z-index: 1;
-    width: calc(100% - 10%);
-    height: calc(100% - 40%);
-} 
+}
 
 #meio > #video {
     width: 50%;
@@ -240,20 +236,26 @@ div > h1 {
 
 #perfil {
     display: flex;
-    padding: 30px 0px 0px 0px;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
 }
 
 #perfil > .foto-perfil {
-    width: 50%;
+    width: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .foto-perfil > img {
+    position: absolute;
+    top: 185%;
     width: 180px;
     height: 180px;
+    border: 0.3em solid black;
+    border-radius: 50%;
     
 }
 
