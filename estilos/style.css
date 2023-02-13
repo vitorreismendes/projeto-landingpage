@@ -200,7 +200,7 @@ div > h1 {
 }
 
 #meio > #txt-video > h1 {
-    color: black;
+    color: white;
     padding: 10px 10px 10px 10px;
     width: 70%;
     text-align: center;
@@ -208,7 +208,7 @@ div > h1 {
 }
 
 #meio > #txt-video > p {
-    color: black;
+    color: white;
     width: 50%;
     text-align: center;
     font-size: 1.2em;
@@ -220,7 +220,7 @@ div > h1 {
     height: 30px;
     color: white;
     font-weight: bold;
-    background-color: #47627e;
+    background-color: #0B33A1;
     border: none;
     border-radius: 15px;
     box-shadow: 1px 3px 5px black;
@@ -229,49 +229,43 @@ div > h1 {
 }
 
 #txt-video > a > input:hover {
-    background-color: #6084ac;
+    background-color: #406EED;
 }
 
 /* Perfil Leo */
 
 #perfil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: white;
 }
 
 #perfil > .foto-perfil {
-    width: 100%;
-    
+    height: 120px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .foto-perfil > img {
-    position: absolute;
-    top: 185%;
-    width: 180px;
-    height: 180px;
-    border: 0.3em solid black;
-    border-radius: 50%;
-    
+   position: absolute;
+   top: 1240px;
+   border-radius: 50%;
+   border: solid 3px black;
+   
 }
 
 #perfil > .txt-perfil  {
-    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    padding: 20px 0 0 0;
+
 }
 
 .txt-perfil > p {
-    width: 70%;
+    width: 55%;
+    padding: 0 0 5px 0;
     text-align: center;
     color: black;
-    font-size: 1em;
 }
 
 /* Logos das Redes Sociais */
@@ -279,7 +273,8 @@ div > h1 {
 #redes {
     display: flex;
     column-gap: 15px;
-    padding: 20px 0px 5px 0px;
+    padding: 5px 0px 5px 0px;
+    border-bottom: solid 2px black;
 }
 
 #redes > a > img {
@@ -323,61 +318,80 @@ div > h1 {
 
 /* Casa Verde e Amarela  */
 
+.tarja {
+    width: 90%;
+    height: 290px;
+    background-color: #DAA41E;
+    position: absolute;
+    top:calc(100% - 80%);
+    left: calc(100% - 94%);
+    z-index: 1;
+    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.555) ;
+    
+}
+
 #programa {
     width: 100%;
+    height: 480px;
     display: flex;
     background-color: white;
     position: relative;
+    
+}
+
+#imgap {
+    width: 50%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#imgap > img {
+    width: 375px ;
+    height: 215px; 
+    display: flex;
+    align-items: center;
 }
 
 #txtap{
-    width: 50%;
+    width: 48%;
+    height: 480px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 #txtap > h1 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
+    color: white;
 }
 
 #txtap > p {
     width: 60%;
     text-align: center;
     font-size: 1.09em;
+    color: white;
 }
 
-#imgap {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    z-index: 3;
-}
 
-#imgap > img {
-    width: 375px ;
-    height: 215px;
-    display: flex;
-    align-items: center;
-}
 
 /* Carrosel de Clientes */
 
 main > h1 {
     text-align: center;
-    color: black;
+    color: white;
     padding: 10px 0 5px 0;
     background-color: #DAA41E;
 }
 
 main > p {
     text-align: center;
-    color: black;
+    color: white;
     font-size: 1.1em;
     padding-bottom: 8px;
     background-color: #DAA41E;
@@ -442,7 +456,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #47627e;
+    background-color: #406EED;
     color: rgb(0, 0, 0);
     width: 100%;
     height: auto;
