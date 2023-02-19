@@ -91,9 +91,9 @@ header > div > a:hover::before {
 
 .lado-esquerdo {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 50%);
     height: 100%;
     z-index: 5;
 }
@@ -105,16 +105,13 @@ header > div > a:hover::before {
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     padding: 20px;
-    margin: auto;
+    margin: 20px;
     width: 400px;
     height: 420px;
     text-align: center;
     display: flex;
     justify-content: center;
     color: white;
-    position: absolute;
-    top: 28%;
-    left: 8%;
 }
 
 #campos {
@@ -457,7 +454,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #406EED;
-    color: rgb(0, 0, 0);
+    color: white;
     width: 100%;
     height: auto;
     font-size: 1.0em;
@@ -468,6 +465,7 @@ footer {
 footer > p {
     font-size: 1.1em;
     margin: 10px 0px;
+    color: white;
 }
 
 footer > #redes-footer {
@@ -475,13 +473,14 @@ footer > #redes-footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
 
 footer > #redes-footer > a > img {
     width: 45px;
     padding-right: 10px;
     padding-bottom: 10px;
+    color: white;
 }
 
 .dev {
@@ -493,7 +492,7 @@ footer > #redes-footer > a > img {
 }
 
 footer > div > p > a {
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
 }
 
