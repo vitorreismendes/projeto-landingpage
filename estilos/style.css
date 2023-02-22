@@ -233,6 +233,10 @@ div > h1 {
 
 #perfil {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #perfil > .foto-perfil {
@@ -251,8 +255,8 @@ div > h1 {
 }
 
 #perfil > .txt-perfil  {
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    justify-content: center;
     align-items: center;
     padding: 20px 0 0 0;
 
@@ -268,7 +272,10 @@ div > h1 {
 /* Logos das Redes Sociais */
 
 #redes {
+    width: 350px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     column-gap: 15px;
     padding: 5px 0px 5px 0px;
     border-bottom: solid 2px black;
