@@ -1,0 +1,65 @@
+
+
+
+
+
+
+/* Video */
+
+#meio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 50px 0px;
+    background-color: #DAA41E;
+}
+
+#meio > #video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    z-index: 3;
+}
+
+#meio > #txt-video {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+#meio > #txt-video > h1 {
+    color: white;
+    padding: 10px 10px 10px 10px;
+    width: 85%;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+#meio > #txt-video > p {
+    color: white;
+    width: 80%;
+    text-align: center;
+    font-size: 1.2em;
+} 
+
+#txt-video > a > input {
+    margin-top: 9px;
+    width: 180px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #0B33A1;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px black;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#txt-video > a > input:hover {
+    background-color: #406EED;
+}

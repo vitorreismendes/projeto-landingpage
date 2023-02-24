@@ -5,31 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Imóvel Aqui</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="estilos/stylemedio.css">
     <link rel="stylesheet" media="screen and (max-width: 375px)" href="estilos/stylemenor.css">
 </head>
 <body>
     <header>
-        <div>
-            <a href="#inome">CADASTRO</a>
-        </div>
-        <div>
-            <a href="#perfil">CONTATO</a>
-        </div>
-        <div id="logo">
-            <img src="imagens/logo corretora lp.png" alt="Logo">
-        </div>
-        <div>
-            <a href="#programa">PROGRAMA</a>
-        </div>
-        <div>
-            <a href="#mapa">ENDEREÇO</a>
-        </div>
+        <nav class="navbar">
+            <a href="#" id="logo">
+                <img src="imagens/logo corretora lp.png" alt="Logo">
+            </a>
+
+            <input type="checkbox" id="troca">
+            <label for="troca"><ion-icon name="menu"></ion-icon></label>
+            <div class="menu">
+                <ul class="lista">
+                    <li><a href="#inome">CADASTRO</a></li>
+                    <li><a href="#perfil">CONTATO</a></li>
+                    <li><a href="#programa">PROGRAMA</a></li>
+                    <li><a href="#mapa">ENDEREÇO</a></li>
+                </ul>
+            </div>    
+        </nav>
     </header>
     <main>
         <div id="foto-fundo" >
-            <div class="lado-esquerdo">
+            <div id="lado-esquerdo">
                 <div id="formulario">
                     <form action="#">
                         <h1>Deixe seu contato</h1>
@@ -113,50 +115,11 @@
         
         <div id="carrosel">
             <div class="galeria">
-                <div class="ft">
-                    <div>
-                        <img src="imagens/cliente 1 reduzido.JPG" alt="Foto dos clientes" >
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iste reiciendis mollitia quaerat accusamus quam nulla nobis vitae quos. Repudiandae, non qui vero laboriosam totam deserunt animi exercitationem nobis recusandae.</p>
-                    </div>
-                </div>
-              
-                <div class="ft">
-                    <div>
-                        <img src="imagens/cliente 2 reduzido.JPG" alt="Foto dos clientes" >
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque quia iste repellendus consequatur culpa corrupti assumenda aspernatur fuga adipisci saepe neque ipsam recusandae numquam, totam quidem doloremque accusantium architecto?</p>
-                    </div>
-                </div>
-        
-                <div class="ft">
-                    <div>
-                        <img src="imagens/cliente 3 reduzido.JPG" alt="Foto dos clientes" >
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cum, sequi in sint nihil, qui adipisci officia ea aperiam architecto perspiciatis, inventore reiciendis saepe? Ea ratione unde iusto voluptatibus animi.</p>
-                    </div>
-                </div>
-                
-                <div class="ft">
-                    <div>
-                        <img src="imagens/cliente 4 reduzido.JPG" alt="Foto dos clientes" >
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem porro dolore minus illo, quo consequuntur quos aut! Quod ex deleniti quas, dolor adipisci velit voluptatum illum sequi, quisquam, eos corporis.</p>
-                    </div>
-                </div>
- 
-                <div class="ft">
-                    <div>
-                        <img src="imagens/cliente 5 reduzido.JPG" alt="Foto dos clientes" >
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque cupiditate optio totam qui officia doloremque minus quod vero molestiae odio at esse ad ducimus, voluptates repellat tempore dolor temporibus deserunt!</p>
-                    </div>
-                </div>
+                <img src="imagens/cliente 1 reduzido.JPG" alt="Foto dos clientes" >
+                <img src="imagens/cliente 2 reduzido.JPG" alt="Foto dos clientes" >
+                <img src="imagens/cliente 3 reduzido.JPG" alt="Foto dos clientes" >
+                <img src="imagens/cliente 4 reduzido.JPG" alt="Foto dos clientes" >
+                <img src="imagens/cliente 5 reduzido.JPG" alt="Foto dos clientes" >
             </div>
         </div>
 
@@ -182,5 +145,9 @@
         </div>
         
     </footer>
+
+
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" ></script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js" ></script>
 </body>
 </html>
