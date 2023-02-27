@@ -3,6 +3,29 @@
 
 
 
+/*Main e Formulario */ 
+
+#foto-fundo{
+    background-image: url(../imagens/pexels-houzlook-com-3797991\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    width: 100%;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lado-esquerdo {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    
+}
+
+
 
 /* Video */
 
@@ -89,7 +112,7 @@
 
 .foto-perfil > img {
    position: absolute;
-   top: 1450px;
+   top: 1513px;
    border-radius: 50%;
    border: solid 3px black;
    margin-top: 10px;
@@ -147,8 +170,8 @@
 }
 
 #imgap > img {
-    width: 375px ;
-    height: 215px; 
+    width: 345px ;
+    height: 198px; 
     display: flex;
     align-items: center;
 }
