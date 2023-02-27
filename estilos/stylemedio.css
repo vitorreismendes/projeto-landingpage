@@ -14,12 +14,14 @@
 /* Formulario */
 
 .lado-esquerdo {
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    width: 60%;
+    margin: auto;
+    width: 100%;
     height: 100%;
-    z-index: 5;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 #formulario {
