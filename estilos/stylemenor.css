@@ -112,7 +112,7 @@
 
 .foto-perfil > img {
    position: absolute;
-   top: 1513px;
+   top: 1535px;
    border-radius: 50%;
    border: solid 3px black;
    margin-top: 10px;
@@ -197,4 +197,47 @@
     text-align: center;
     font-size: 1.09em;
     color: white;
+}
+
+
+/* Carrosel de Clientes */
+
+main > h1 {
+    text-align: center;
+    color: white;
+    padding: 10px 0 5px 0;
+    background-color: #DAA41E;
+}
+
+main > p {
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    padding-bottom: 15px;
+    background-color: #DAA41E;
+}
+
+ #carrosel {
+    background-color: #DAA41E;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.galeria > img {
+    padding: 8px;
+    width: 50%;
+    
 }
