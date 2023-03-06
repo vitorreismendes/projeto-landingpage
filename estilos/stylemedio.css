@@ -11,7 +11,110 @@
     box-sizing: border-box;
 }
 
-/* Formulario */
+:target {
+    scroll-margin-top: 10em;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1366px;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(233, 232, 185);
+}
+
+/*Header*/
+
+header {
+    width: 100%;
+    background-color: #DAA41E;
+} 
+
+header > div > a::before {
+    content: '';
+    scale: 0 1;
+    transform-origin: left;
+    transition: 0.30s;
+}
+
+header > div > a:hover::before {
+    scale: 1;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DAA41E;
+}
+
+li > a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+li > a:hover {
+    color: white;
+    border-bottom: solid 2px black;
+}
+
+#logo {
+    padding: 10px 10px 10px 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-weight: bold;
+}
+
+#troca, .navbar label {
+    display: none;
+}
+
+@media screen and (max-width: 890px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    ion-icon {
+        padding-right: 30px;
+        width: 30px;
+        height: 30px;        
+    }
+
+    .lista {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #troca:checked ~ .menu {
+        max-height: 100%;
+    }
+}
+
+/*Main e Formulario */ 
 
 #foto-fundo{
     background-image: url(../imagens/pexels-houzlook-com-3797991\ \(1\).jpg);
@@ -21,30 +124,256 @@
     width: 100%;
     height: 580px;
     display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#lado-esquerdo {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#formulario {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.466), rgba(10, 10, 10, 0.212)); 
+    backdrop-filter: blur(40px); 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 400px;
+    height: 420px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#campos {
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#campos > label {
+    padding-top: 10px;
+    padding-bottom: 3px;
+    text-align: start;
+    font-weight: 500;
+}
+
+#campos > label::after {
+    content: "*";
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.63);
+}
+
+#campos > input {
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    padding-left: 5px;
+}
+
+form > input {
+    margin-top: 9px;
+    width: 180px;
+    height: 30px;
+    color: black;
+    font-weight: bold;
+    background-color: #DAA41E;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px black;
+    cursor: pointer;
+    
+}
+
+form > input:hover {
+    background-color: #E8C128;
+}
+
+/* Video */
+
+#meio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: c;
+    padding: 50px 0px 50px 0px;
+    background-color: #DAA41E;
+}
+
+#meio > #video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    z-index: 3;
+}
+
+#video > video {
+    width: 287px;
+}
+
+div > h1 {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    
+}
+
+#meio > #txt-video {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+#meio > #txt-video > h1 {
+    color: white;
+    padding: 10px 10px 10px 10px;
+    width: 95%;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+#meio > #txt-video > p {
+    color: white;
+    width: 87%;
+    text-align: center;
+    font-size: 1.2em;
+} 
+
+#txt-video > a > input {
+    margin-top: 9px;
+    width: 180px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #0B33A1;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px black;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#txt-video > a > input:hover {
+    background-color: #406EED;
+}
+
+/* Perfil Leo */
+
+#perfil {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#perfil > .foto-perfil {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.foto-perfil > img {
+   position: absolute;
+   top: 1465px;
+   border-radius: 50%;
+   border: solid 3px black;
+   margin-top: 10px;
+   
+}
 
-/* Parágrafo do Perfil */
+#perfil > .txt-perfil  {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 0 0;
+
+}
 
 .txt-perfil > p {
-    width: 55%;
+    width: 80%;
     padding: 0 0 5px 0;
     text-align: center;
     color: black;
 }
 
-/* Programa */
+/* Logos das Redes Sociais */
+
+#redes {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    padding: 5px 0px 5px 0px;
+    border-bottom: solid 2px black;
+}
+
+#redes > a > img {
+    width: 45px;
+}
+
+#redes > .icones {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: none;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: .25s;
+}
+
+#zap:hover {
+    background-color: #2ea44f;
+    outline-color: #2ea44f;
+}
+
+#insta:hover {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    outline-color: #a02d76;
+}
+
+#face:hover {
+    background-color: #1B74E4;
+    outline-color: #1B74E4;
+}
+
+#tiktok:hover {
+    background-image: radial-gradient(circle at 5% 100%, #97e9fd 0%, #97e9fd 40%, #e2f5fa 60%, #d62424 80%, #d62424 90%);
+    outline-color: #a02d76;
+}
+
+/* Casa Verde e Amarela  */
 
 .tarja {
-    width: 90%;
-    height: 485px;
+    width: 96%;
+    height: 420px;
     background-color: #DAA41E;
     position: absolute;
-    top:calc(100% - 85%);
-    left: calc(100% - 95%);
+    top:calc(100% - 91%);
+    left: calc(100% - 98%);
     z-index: 1;
     box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.555) ;
     
@@ -52,33 +381,35 @@
 
 #programa {
     width: 100%;
-    height: 700px;
+    height: 530px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     background-color: white;
     position: relative;
+    
 }
 
 #imgap {
-    width: 80%;
-    height: auto;
+    width: 50%;
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-items: flex-end;
     z-index: 2;
 }
 
 #imgap > img {
-    width: 500px;
-    height: 287px; 
+    width: auto;
+    height: auto;
     display: flex;
     align-items: center;
 }
 
 #txtap{
-    width: 90%;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
@@ -88,6 +419,7 @@
 }
 
 #txtap > h1 {
+    width: 92%;
     text-align: center;
     font-size: 1.8em;
     color: white;
@@ -96,9 +428,117 @@
 #txtap > p {
     width: 80%;
     text-align: center;
-    font-size: 1.09em;
+    font-size: 1.05em;
     color: white;
 }
 
+
+
 /* Carrosel de Clientes */
+
+main > h1 {
+    text-align: center;
+    color: white;
+    padding: 10px 0 5px 0;
+    background-color: #DAA41E;
+}
+
+main > p {
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    padding-bottom: 15px;
+    background-color: #DAA41E;
+}
+
+ #carrosel {
+    background-color: #DAA41E;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.galeria > img {
+    padding: 0 10px 8px 0;
+    
+}
+
+/* Mapa */
+
+#mapa {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+    background-color: white;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #406EED;
+    color: white;
+    width: 100%;
+    height: auto;
+    font-size: 1.0em;
+    font-weight: 500;
+    
+}
+
+footer > p {
+    font-size: 1.1em;
+    margin: 10px 0px;
+    color: white;
+}
+
+footer > #redes-footer {
+    width: 300px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid white;
+}
+
+footer > #redes-footer > a > img {
+    width: 45px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    filter: invert(1);
+}
+
+.dev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+footer > div > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
 
